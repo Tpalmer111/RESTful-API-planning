@@ -148,11 +148,35 @@ Now it is time for you to plan a `RESTful API` of your own. Take a look at this 
 Your Task is to write a `RESTful` routing chart for the library system's API. Your API will need to serve full CRUD on `members`, `books`, and `genres`. Do not worry about authentication, another team is handling that. 
 
 You can use this markdown chart:
+Members:
+| HTTP METHOD (_Verb_) |    URL (_Nouns_)    | CRUD |   Response   | Notes |
+| -------------------- | ------------------- | ---- | ------------ | ----- |
+| POST                 | /members            |  C   |              |       |
+| GET                  | /members/:member_id |  R   |              |       |
+| GET                  | /members/new        |  R   |              |       |
+| PUT                  | /members/:member_id |  U   |              |       |
+| DELETE               | /members/:member_id |  D   |              |       |
 
-| HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
-| -------------------- | ------------- | ---- | -------- | ----- |
-|                      |               |      |          |       |
-|                      |               |      |          |       |
+Books:
+| HTTP METHOD (_Verb_) |    URL (_Nouns_)    | CRUD | Response | Notes |
+| -------------------- | ------------------- | ---- | -------- | ----- |
+| POST                 | /books              |   C  |          |       |
+| GET                  | /books (index)      |   R  |          |       |
+| GET                  | /books/:book_id     |   R  |          |       |
+| GET                  | /books/:member_id   |   R  |          |       |
+| PUT                  | /books/:book_id     |   U  |          |       |
+| PUT                  | /books/:member_id   |   U  |          |       |
+| DELETE               | /books/:book_id     |   D  |          |       |
+
+Genres:
+| HTTP METHOD (_Verb_) |    URL (_Nouns_)    | CRUD | Response | Notes |
+| -------------------- | ------------------- | ---- | -------- | ----- |
+| POST                 | /genres             |   C  |          |       |
+| GET                  | /genres (index)     |   R  |          |       |
+| GET                  | /genres/:genre_id   |   R  |          |       |
+| GET                  | /books/:member_id   |   R  |          |       |
+| PUT                  | /genre/:genre_id    |   U  |          |       |
+| DELETE               | /genre/:genre_id    |   P  |          |       |
 
 #### Things to keep in mind
 
